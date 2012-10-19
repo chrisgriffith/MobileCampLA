@@ -1,0 +1,1 @@
+var albumlistTemplate ='<ul id="albumList" data-role="listview">{{#albums}}<li id="{{id}}"><a href="#albumDetailsPage"><img src="images/{{cover}}" class="ui-li-thumb"><h3 class="ui-li-heading">{{title}}</h3><p class="ui-li-desc">{{release}}</p></a></li>{{/albums}}</ul>';

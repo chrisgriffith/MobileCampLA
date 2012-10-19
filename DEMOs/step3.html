@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Step 3</title>
+<link rel="stylesheet" href="css/jquery.mobile.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile.js"></script>
+</head>
+<body>
+<div id="homePage" data-role="page">
+	<div data-role="header">
+		<h1>Page Title</h1>
+	</div>
+	<div data-role="content">
+		<p>My page content</p>
+		<a href="#aboutPage" data-transition="flip">About Us</a>
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+	
+</div>
+<div id="aboutPage" data-role="page">
+	<div data-role="header">
+		<h1>About Us</h1>
+	</div>
+	<div data-role="content">
+		<p>My page's awesome content</p>
+		<a href="#homePage" data-transition="flip" data-rel="back">Back</a>
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+	
+</div>
+</body>
+
+</html>

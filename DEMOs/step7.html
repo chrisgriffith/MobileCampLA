@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Step 7</title>
+<link rel="stylesheet" href="css/jquery.mobile.css" />
+<style>
+.customNavFooter .ui-btn .ui-btn-inner {
+    padding-top: 40px !important; 
+}
+
+.customNavFooter .ui-btn .ui-icon { 
+    width: 45px!important; 
+    height: 35px!important; 
+    margin-left: -24px !important; 
+    box-shadow: none!important; 
+    -moz-box-shadow: none!important; 
+    -webkit-box-shadow: none!important;
+    -webkit-border-radius: none !important;
+    border-radius: none !important; 
+}
+#tourIcon .ui-icon { background:  url(images/238-road.png) 50% 50% no-repeat; background-size: 20px 28px; }
+#albumIcon .ui-icon { background:  url(images/221-recordplayer.png) 50% 50% no-repeat; background-size: 37px 30px; }
+#bandIcon .ui-icon { background:  url(images/112-group.png) 50% 50% no-repeat; background-size: 32px 21px; }
+
+</style>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile.js"></script>
+</head>
+<body>
+<div id="tour" data-role="page">
+	<div data-role="header" data-position="fixed">
+		<h1>Rush</h1>
+	</div>
+	<div data-role="content">
+		<p>Tour Content</p>
+	</div>
+	<div class="customNavFooter" data-role="footer" data-id="tourList" data-position="fixed">
+		<div class="customNavFooter"  data-role="navbar">
+			<ul>
+				<li><a href="#tour" id="tourIcon" class="ui-btn-active ui-state-persist" data-icon="custom">Tour</a></li>
+				<li><a href="#albums" id="albumIcon" data-icon="custom">Albums</a></li>
+				<li><a href="#band" id="bandIcon" data-icon="custom">Band</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->	
+</div>
+
+<div id="albums" data-role="page">
+	<div data-role="header" data-position="fixed">
+		<h1>Rush</h1>
+	</div>
+	<div data-role="content">
+		<p>Album Content</p>
+	</div>
+	<div class="customNavFooter" data-role="footer" data-id="tourList" data-position="fixed">
+		<div class="customNavFooter"  data-role="navbar">
+			<ul>
+				<li><a href="#tour" id="tourIcon"  data-icon="custom">Tour</a></li>
+				<li><a href="#albums" id="albumIcon" class="ui-btn-active ui-state-persist" data-icon="custom">Albums</a></li>
+				<li><a href="#band" id="bandIcon" data-icon="custom">Band</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+<div id="band" data-role="page">
+	<div data-role="header" data-position="fixed">
+		<h1>Rush</h1>
+	</div>
+	<div data-role="content">
+		<p>Band Content</p>
+	</div>
+	<div class="customNavFooter" data-role="footer" data-id="tourList" data-position="fixed">
+		<div class="customNavFooter"  data-role="navbar">
+			<ul>
+				<li><a href="#tour" id="tourIcon" data-icon="custom">Tour</a></li>
+				<li><a href="#albums" id="albumIcon" class="ui-btn-active ui-state-persist" data-icon="custom">Albums</a></li>
+				<li><a href="#band" id="bandIcon" data-icon="custom">Band</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</body>
+
+</html>

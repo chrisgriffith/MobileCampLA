@@ -1,0 +1,1 @@
+var albumDetailsTemplate = "<img src='images/{{cover}}' /><h1>{{title}}</h1><h2>Released: {{release}}<h2><ul>{{#tracks}}<li>{{track}}</li>{{/tracks}}</ul>";
